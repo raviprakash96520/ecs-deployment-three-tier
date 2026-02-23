@@ -32,7 +32,7 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v3
         with:
-          context: backend
-          path: backend/Dockerfile
+          context: ./backend
+          path: ./backend/Dockerfile
           push: true
           tags: 736184860833.dkr.ecr.us-east-1.amazonaws.com/dev/backend:${{ github.run_number }}
